@@ -6,7 +6,6 @@ const output = document.querySelector("#output");
 const main = document.querySelector("#main");
 
 check.addEventListener("click", () => {
-  // @ts-ignore
   clickHandler(priceInitial.value, quantity.value, priceToday.value, output);
 });
 
@@ -15,6 +14,10 @@ function clickHandler(initial, qty, final, op) {
     initial = parseFloat(initial);
     qty = parseFloat(qty);
     final = parseFloat(final);
+    if (initial < 0 || qty < 0 || final < 0){
+      alert("Please enter valid details");
+    }
+    else{
     let costPrice = initial * qty;
     let sellPrice = final * qty;
     if (costPrice < sellPrice) {
@@ -34,7 +37,10 @@ function clickHandler(initial, qty, final, op) {
     } else {
       output.textContent = "No profit no loss";
     }
-  } else {
-    output.textContent = "Please enter all details";
+  } 
+}
+  else {
+    alert("Please enter valid details");
   }
+  
 }

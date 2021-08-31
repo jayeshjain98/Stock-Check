@@ -10,15 +10,17 @@
   </head>
   <body>
     <main id="main">
-      <h1>Stock Check: Profit/Loss</h1>
-      <div class="label">Enter the initial stock price (in ₹)</div>
-      <input type="text" id="price-initial" />
-      <div class="label">Enter the quantity</div>
-      <input type="text" id="quantity" />
-      <div class="label">Enter the stock price today (in ₹)</div>
-      <input type="text" id="price-today" />
+      <div class="heading">Stock Check: Profit/Loss</div>
+      <div class="container-center">
+      <label class="label" for="price-initial">Enter the initial stock price (in ₹)</label>
+      <input type="number" id="price-initial" />
+      <label for="quantity" class="label">Enter the quantity</label>
+      <input type="number" id="quantity" />
+      <label for="price-today" class="label">Enter the stock price today (in ₹)</label>
+      <input type="number" id="price-today" />
       <button id="check">Check</button>
       <div id="output">stock market is subject to market risk 😬</div>
+    </div>
     </main>
   </body>
 </html>

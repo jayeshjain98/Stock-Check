@@ -5,29 +5,39 @@
 }
 
 main {
-  margin: 0 auto;
   width: 100%;
-  max-width: 500px;
-  background-color: yellow;
   height: 100vh;
+  background-color: honeydew;
+  /* background-image: url("/stock.svg"); */
+  background-repeat: no-repeat;
+  background-size: 400px 400px;
+  background-position-x: right;
+  background-position-y: center;
+}
+
+.heading {
+  font-size: xx-large;
+  font-weight: 600;
+  background-color: darkgray;
+  padding: 1rem 1rem;
   text-align: center;
 }
 
-.label,
-input,
-button,
-#output {
-  margin: 1.3rem;
-  font-size: 1.3rem;
-}
-
-input {
-  background-color: #FECDD3;
-}
-
-button {
+.label, input, #check, #output {
+  margin: 2rem auto;
   display: block;
-  margin: 0 auto;
-  padding: 1rem 2rem;
-  background-color: #FECDD3;
+  text-align: center;
+  font-size: x-large;
+
+}
+
+#check {
+  border-radius: 10px;
+  border: none;
+  padding: 10px 10px;
+
+}
+
+#check:hover {
+  background-color: grey;
 }

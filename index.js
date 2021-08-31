@@ -25,14 +25,14 @@ function clickHandler(initial, qty, final, op) {
       let profitPercent = ((profit / costPrice) * 100).toFixed(2);
       output.textContent = `Yay! you made a profit of ₹${profit} that is ${profitPercent}% of the initial price`;
       if (parseFloat(profitPercent) >= 50) {
-        main.style.backgroundColor = "green";
+        output.style.color = "green";
       }
     } else if (costPrice > sellPrice) {
       let loss = costPrice - sellPrice;
       let lossPercent = ((loss / costPrice) * 100).toFixed(2);
       output.textContent = `Alas! you just lost ₹${loss} that is ${lossPercent}% of the initial price`;
       if (parseFloat(lossPercent) >= 50) {
-        main.style.backgroundColor = "red";
+        output.style.color = "red";
       }
     } else {
       output.textContent = "No profit no loss";

@@ -35,9 +35,10 @@ main {
   border-radius: 10px;
   border: none;
   padding: 10px 10px;
-
+  background-color: grey;
 }
 
+
 #check:hover {
-  background-color: grey;
+  background-color: darkgray;
 }
